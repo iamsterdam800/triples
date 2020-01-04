@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
       <div className="container">
         <p/>
         <h3>Triple System Design</h3>
-        <p>This page allows to generate solutions to the generalized <a href="https://en.wikipedia.org/wiki/Kirkman%27s_schoolgirl_problem" target="_blank">Kirkman's schoolgirl problem</a> for an arbitrary number of schoolgirls.</p>
+        <p>This page allows to generate solutions to the generalized <a href="https://en.wikipedia.org/wiki/Kirkman%27s_schoolgirl_problem" target="_blank" rel="noopener noreferrer">Kirkman's schoolgirl problem</a> for an arbitrary number of schoolgirls.</p>
 
         <form>
           <fieldset>

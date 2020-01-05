@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Form from "./Form";
 
 function App() {
   return (
@@ -24,19 +25,7 @@ function App() {
         <h3>Triple System Design</h3>
         <p>This page allows to generate solutions to the generalized <a href="https://en.wikipedia.org/wiki/Kirkman%27s_schoolgirl_problem" target="_blank" rel="noopener noreferrer">Kirkman's schoolgirl problem</a> for an arbitrary number of schoolgirls.</p>
 
-        <form>
-          <fieldset>
-
-            <div className="form-group">
-              <label className="col-form-label" htmlFor="num">Number of schoolgirls:</label>
-              <input type="number" className="form-control" min="3" step="2" pattern="[0-9]*" placeholder="Try 7 or 11 or 3" id="num"/>
-              <small>Enter an integer in the form <code>n*6-1±2</code>. E.g.: 3, 7, 9, 13, 15, 19, 21, etc.</small>
-            </div>
-
-            <button type="submit" className="btn btn-primary">Construct groups</button>
-
-          </fieldset>
-        </form>
+        <Form/>
 
       </div>
     </div>

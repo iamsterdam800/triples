@@ -25,7 +25,7 @@ function App() {
         <h3>Triple System Design</h3>
         <p>This project allows you to construct triples from a set of people, so that each person is included in a triple with every other person only once.</p>
         <p>One example of it is a <a href="https://en.wikipedia.org/wiki/Kirkman%27s_schoolgirl_problem" target="_blank" rel="noopener noreferrer">Kirkman's schoolgirl problem</a>,
-          where it's required to set up daily walks for 15 schoolgirls in triples so that they would walk with every other schoolgirl exactly once.
+          where it's required to set up daily walks for 15 schoolgirls in triples so that each schoolgirl would walk with every other schoolgirl exactly once.
         </p>
         <p>Another example is setting up a tournament for a <a href="https://www.quora.com/What-are-some-fun-games-that-can-be-played-with-3-people" target="_blank" rel="noopener noreferrer">3-player game</a>,
           such as: <a href="https://en.wikipedia.org/wiki/Preferans" target="_blank" rel="noopener noreferrer">Preferans</a> and

@@ -9,7 +9,6 @@ class Form extends Component {
       isValid: true,
       message: ''
     },
-    formIsValid: true,
     numToRender: null
   };
 
@@ -19,7 +18,7 @@ class Form extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    if (this.state.formIsValid) {
+    if ( this.validateForm() ) {
       this.setState( { numToRender: this.state.num.value } );
     } else {
       this.setState( { numToRender: null } );
@@ -47,7 +46,9 @@ class Form extends Component {
     }
     formIsValid = num.isValid;
 
-    this.setState({ num, formIsValid });
+    this.setState({ num });
+
+    return formIsValid;
   };
 
   render() {
@@ -69,6 +70,7 @@ class Form extends Component {
               <div className="row-cols-lg-3">
                 <input
                   autoFocus
+                  autoComplete="off"
                   id="num"
                   type="number"
                   className={numClasses}
@@ -81,7 +83,7 @@ class Form extends Component {
                   placeholder="Try 7 or 15 or 3"
                 />
               </div>
-              <small>Enter an integer in the form <code>n*6-1±2</code>. E.g.: 3, 7, 9, 13, 15, 19, 21, etc.</small>
+              <small>Enter an integer in the form <strong>n*6-1±2</strong>. E.g.: 3, 7, 9, 13, 15, 19, 21, etc.</small>
             </div>
 
             <button type="submit" className="btn btn-primary">Construct triples</button>

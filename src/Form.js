@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import Triples from "./Triples";
 
 class Form extends Component {
   state = {
@@ -8,7 +9,8 @@ class Form extends Component {
       isValid: true,
       message: ''
     },
-    formIsValid: true
+    formIsValid: true,
+    numToRender: null
   };
 
   onChangeNum = (e) => {
@@ -18,7 +20,9 @@ class Form extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     if (this.state.formIsValid) {
-      // form processing here....
+      this.setState( { numToRender: this.state.num.value } );
+    } else {
+      this.setState( { numToRender: null } );
     }
   };
 
@@ -56,33 +60,38 @@ class Form extends Component {
 
 
     return (
-      <form onSubmit={ this.onSubmit }>
-        <fieldset>
+      <div>
+        <form onSubmit={ this.onSubmit }>
+          <fieldset>
 
-          <div className="form-group">
-            <label className="col-form-label" htmlFor="num">Number of participants:</label>
-            <div className="row-cols-lg-3">
-              <input
-                autoFocus
-                id="num"
-                type="number"
-                className={numClasses}
-                min="3"
-                step="2"
-                pattern="[0-9]*"
-                value={ num.value }
-                onChange={ this.onChangeNum }
-                onBlur={ this.validateForm }
-                placeholder="Try 7 or 11 or 3"
-              />
+            <div className="form-group">
+              <label className="col-form-label" htmlFor="num">Number of participants:</label>
+              <div className="row-cols-lg-3">
+                <input
+                  autoFocus
+                  id="num"
+                  type="number"
+                  className={numClasses}
+                  min="3"
+                  step="2"
+                  pattern="[0-9]*"
+                  value={ num.value }
+                  onChange={ this.onChangeNum }
+                  onBlur={ this.validateForm }
+                  placeholder="Try 7 or 15 or 3"
+                />
+              </div>
+              <small>Enter an integer in the form <code>n*6-1±2</code>. E.g.: 3, 7, 9, 13, 15, 19, 21, etc.</small>
             </div>
-            <small>Enter an integer in the form <code>n*6-1±2</code>. E.g.: 3, 7, 9, 13, 15, 19, 21, etc.</small>
-          </div>
 
-          <button type="submit" className="btn btn-primary">Construct groups</button>
+            <button type="submit" className="btn btn-primary">Construct triples</button>
 
-        </fieldset>
-      </form>
+          </fieldset>
+        </form>
+
+        <Triples num={ this.state.numToRender } />
+
+      </div>
     );
   }
 }

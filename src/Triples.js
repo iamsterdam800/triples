@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ButtonGroup, Button, Input } from 'reactstrap';
+import { ButtonGroup, Button } from 'reactstrap';
 
 class Triples extends Component {
 
@@ -66,7 +66,7 @@ class Triples extends Component {
 
     return (
       <div>
-        <br/>
+        <p/>
 
         <h5>Triples for { num } participants</h5>
 
@@ -76,7 +76,7 @@ class Triples extends Component {
           )}
         </div>
 
-        <br/>
+        <p/>
 
         { triples.map( triple =>
           <ButtonGroup className="mr-2">

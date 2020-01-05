@@ -29,7 +29,7 @@ function App() {
 
             <div className="form-group">
               <label className="col-form-label" htmlFor="num">Number of schoolgirls:</label>
-              <input type="number" className="form-control" min="3" step="2" placeholder="Try 7 or 11 or 3" id="num"/>
+              <input type="number" className="form-control" min="3" step="2" pattern="[0-9]*" placeholder="Try 7 or 11 or 3" id="num"/>
               <small>Enter an integer in the form <code>n*6-1±2</code>. E.g.: 3, 7, 9, 13, 15, 19, 21, etc.</small>
             </div>
 

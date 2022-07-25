@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/triples/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/triples/static/js/main.3228d355.chunk.js",
+    "main.js.map": "/triples/static/js/main.3228d355.chunk.js.map",
+    "runtime-main.js": "/triples/static/js/runtime-main.53af24ec.js",
+    "runtime-main.js.map": "/triples/static/js/runtime-main.53af24ec.js.map",
+    "static/css/2.eac53682.chunk.css": "/triples/static/css/2.eac53682.chunk.css",
+    "static/js/2.16fe9f34.chunk.js": "/triples/static/js/2.16fe9f34.chunk.js",
+    "static/js/2.16fe9f34.chunk.js.map": "/triples/static/js/2.16fe9f34.chunk.js.map",
+    "index.html": "/triples/index.html",
+    "precache-manifest.b6e5b9a706ac672d7cc3e10165bc2490.js": "/triples/precache-manifest.b6e5b9a706ac672d7cc3e10165bc2490.js",
+    "service-worker.js": "/triples/service-worker.js",
+    "static/css/2.eac53682.chunk.css.map": "/triples/static/css/2.eac53682.chunk.css.map",
+    "static/css/main.27fd15f6.chunk.css.map": "/triples/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.16fe9f34.chunk.js.LICENSE": "/triples/static/js/2.16fe9f34.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53af24ec.js",
+    "static/css/2.eac53682.chunk.css",
+    "static/js/2.16fe9f34.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.3228d355.chunk.js"
+  ]
+}
